@@ -8,7 +8,7 @@ class MedianFinder:
         self.small, self.large = [], []
 
     def addNum(self, num: int) -> None:
-        heapq.heappush(self.small, -1 * num)    # min heap -ve
+        heapq.heappush(self.small, -1 * num)    # max heap -ve
 
         # make sure : every num in small <= every num in large
         if (self.small and self.large and (-1 * self.small[0]) > self.large[0]):
