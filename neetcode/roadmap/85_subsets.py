@@ -5,7 +5,7 @@ class Solution:
 
         def dfs(i):     # ith element aka current index we're looking at
             if i >= len(nums):
-                result.append(subset.copy())
+                result.append(subset.copy())    # all the entries in result will point to the same list in memory but subset keeps changing
                 return
             # decision to include nums[i]
             subset.append(nums[i])
