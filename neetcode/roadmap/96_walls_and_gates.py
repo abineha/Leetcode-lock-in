@@ -8,7 +8,7 @@ class Solution:
 
         for r in range(ROWS):
             for c in range(COLS):
-                if rooms[r][c] == 0:
+                if rooms[r][c] == 0:    # finding all gates
                     q.append([r,c])
                     visit.add((r,c))
 
