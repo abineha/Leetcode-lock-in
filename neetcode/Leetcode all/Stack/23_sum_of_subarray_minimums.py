@@ -2,7 +2,7 @@ from typing import List
 
 class Solution:
     def sumSubarrayMins(self, arr: List[int]) -> int:
-        MOD = 10 ** 7 + 9  # To avoid overflow and keep result within limits
+        MOD = 10 ** 9 + 7  # To avoid overflow and keep result within limits
         result, stack = 0, []  # Stack holds tuples: (index, value)
 
         # Process each element in the array
